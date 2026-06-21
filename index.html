@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0a14" />
+  <title>Khushi ✦</title>
+  <meta name="description" content="A little something made just for Khushi." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Animated background -->
+  <canvas id="stars"></canvas>
+  <div class="aurora"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Intro / loader -->
+  <div class="intro" id="intro">
+    <div class="intro-inner">
+      <span class="intro-spark">✦</span>
+      <h1 class="intro-name" id="introName">Khushi</h1>
+      <p class="intro-sub">tap to begin</p>
+    </div>
+  </div>
+
+  <main id="main" aria-hidden="true">
+    <!-- Hero -->
+    <section class="hero section">
+      <p class="eyebrow reveal">a little corner of the internet</p>
+      <h1 class="hero-title reveal">
+        <span>Made for</span>
+        <span class="script">Khushi</span>
+      </h1>
+      <p class="hero-tag reveal">
+        <span id="typewriter"></span><span class="caret">|</span>
+      </p>
+      <a href="#words" class="scroll-cue reveal" aria-label="scroll down">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- Words -->
+    <section class="section words" id="words">
+      <p class="kicker reveal">a few honest words</p>
+      <div class="word-grid">
+        <article class="word-card reveal">
+          <h3>Your name means joy</h3>
+          <p>And somehow you live up to it every single day — the room is just brighter when you're in it.</p>
+        </article>
+        <article class="word-card reveal">
+          <h3>You make ordinary days better</h3>
+          <p>Nothing fancy needed. A conversation with you turns a regular afternoon into something I remember.</p>
+        </article>
+        <article class="word-card reveal">
+          <h3>You're impressively you</h3>
+          <p>Smart, kind, and stubbornly genuine. You don't perform for anyone — and that's the most attractive thing about you.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Reasons counter / interactive -->
+    <section class="section reasons">
+      <p class="kicker reveal">things I noticed about you</p>
+      <ul class="reason-list">
+        <li class="reveal" data-i="01"><span>The way you laugh before finishing your own joke.</span></li>
+        <li class="reveal" data-i="02"><span>How you care about the small things most people ignore.</span></li>
+        <li class="reveal" data-i="03"><span>That look you get when you talk about something you love.</span></li>
+        <li class="reveal" data-i="04"><span>You're effortlessly kind, even when no one's watching.</span></li>
+      </ul>
+    </section>
+
+    <!-- Constellation / interactive canvas note -->
+    <section class="section quote">
+      <blockquote class="reveal">
+        <p>“Of all the names in the world, <em>Khushi</em> is my favourite kind of happiness.”</p>
+      </blockquote>
+    </section>
+
+    <!-- Closing -->
+    <section class="section closing">
+      <h2 class="reveal">Hey, Khushi.</h2>
+      <p class="reveal">You're genuinely one of a kind — and I just wanted you to have something that says so. No reason. You just deserve nice things.</p>
+      <button class="petal-btn reveal" id="petalBtn">make it rain petals ✦</button>
+      <p class="signoff reveal">— made with care, just for you</p>
+    </section>
+
+    <footer class="foot">
+      <span>✦ Khushi ✦</span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
